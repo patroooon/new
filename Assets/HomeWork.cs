@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -81,20 +82,24 @@ public class HomeWork : MonoBehaviour
     // Start is called before the first frame update
     void Start()
         {
-        MyList myList = new MyList();
-        myList.Add(1);
-        myList.Add(5);
-        myList.Insert(1, 3);
-        myList.Capacity = 4;
-        myList.Remove(3);
-        myList.RemoveAt(0);
-
-        for (int i = 0; i < myList.Count; ++i)
+     
         {
-            Debug.Log(myList[i]);
-        }
 
-        Debug.Log("Hello world");
+            List<int> myList = new List<int>();
+            myList.Add(1);
+            myList.Add(5);
+            myList.Insert(1, 3);
+            myList.Capacity = 4;
+            myList.Remove(3);
+            myList.RemoveAt(0);
+
+            for (int i = 0; i < myList.Count; ++i)
+            {
+                Debug.Log(myList[i]);
+            }
+            
+        }
+        
 
 
     }
